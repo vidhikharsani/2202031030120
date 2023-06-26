@@ -1,130 +1,63 @@
-<html> <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <head> <style>  
-      body{  
-        font-family: Calibri, Helvetica, sans-serif;  
-        background-color: peachpuff;  
-      }  
-      .container {  
-          padding: 50px;  
-        background-color: lightblue;  
-      }  
-        
-      input[type=text], input[type=password], textarea {  
-        width: 100%;  
-        padding: 15px;  
-      
-        display: inline-block;  
-        border: none;  
-        background: white  
-      }  
-      input[type=text]:focus, input[type=password]:focus {  
-        background-color: orange;  
-        outline: none;  
-      }  
-       div {  
-                  padding: 10px 0;  
-               }  
-      hr {  
-        border: 1px solid #f1f1f1;  
-       
-      }  
-      .registerbtn {  
-        background-color: #4CAF50;  
-        color: white;  
-        padding: 16px 20px;  
-       
-        border: none;  
-        cursor: pointer;  
-        width: 75%;  
-        opacity: 0.9;  
-      }  
-      
-      </style>
-    <title> Registration Page </title>
-  </head> 
-  <body bgcolor="white">
-    <table>
-      <form>
-        <h2>Registration</h2>
-        <tr><td>
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-              fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-              <path
-                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-            </svg></td>
-          <td>
-            <label> Firstname </label> </td>
-          <td>
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+      <h1>Register</h1>
+</head>
+  <body>
+    <font size="3">
+  <form class="was-validated">
 
-            <input type="text" name="firstname" size="15" /> </tr></td>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+      <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+      <path d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"/>
+    </svg>
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter username" name="username" id="username" required>
+    <div class="valid-feedback">Valid</div>
+    <div class="invalid-feedback">Please fill out this field</div>
+  </div><br>
 
-        <tr><td> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-              fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-              <path
-                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-            </svg></td>
-          <td>
-            <label> Middlename </label> </td>
-          <td>
-            <input type="text" name="middlename" size="15" /> </tr></td><br> <br>
-        <tr><td>
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-              fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-              <path
-                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-            </svg> </td>
-          <td>
-            <label> Lastname </label> </td>
-          <td>
-            <input type="text" name="lastname" size="15" /></tr></td><br> <br>
-        <tr><td>
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-              fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
-              <path
-                d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
-            </svg></td>
-          <td>
-            <label> Course </label> </td>
-          <td><select>
-              <option value="Course">Course</option>
-              <option value="BCA">BCA</option>
-              <option value="B.Tech">B.Tech</option>
-              <option value="M.Tech">M.Tech</option>
-            </select></tr></td><br><br>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mailbox" viewBox="0 0 16 16">
+    <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
+    <path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
+  </svg>
+    <label for="email"><b>Email</b></label>
+    <input type="text"placeholder="Enter Email"name="email"id="email"required>
+    <div class="valid-feedback">Valid</div>
+    <div class="invalid-feedback">Please fill out this field</div>
+  </div><br>
 
-        <tr><td><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-              fill="currentColor" class="bi bi-person-check" viewBox="0 0 16 16">
-              <path
-                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
-              <path
-                d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z" />
-            </svg> </td>
-          <td>
-            <label>Gender </label></td><br>
-          <td>
-            <input type="radio" name="male" /> Male <br>
-            <input type="radio" name="female" /> Female <br>
-            <input type="radio" name="other" /> Other </tr></td><br><br>
 
-        <tr><td> <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-              fill="currentColor" class="bi bi-telephone-fill"
-              viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-            </svg></td>
-          <td>
-            <label>Phone</label> </td>
-          <td>
-            <input type="text" name="country code" value="+91" size="2" />
-            <input type="text" name="phone" size="10" /> </tr></td><br> <br>
 
-        <tr><td> <input type="button" value="Submit" /> </td></tr>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+    <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+    <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+  </svg>
+    <label for="pwd"><b>Password</b></label>
+    <input type="password"placeholder="Enter Password"name="pwd"id="pwd"required/><div class="valid-feedback">Valid</div>
+    <div class="invalid-feedback">Please fill out this field</div>
+  </div><br>
 
-        <tr><td>
-            <a href="file:///C:/Users/student/Desktop/day-6/login.html">login</a></td></tr>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+    <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+  </svg>
+    <label for="pwd-repeat"><b>Repeat Password</b></label>
+    <input type="password"placeholder="Repeat Password"name="pwd-repeat"id="pwd-repeat"required/><div class="valid-feedback">Valid</div>
+    <div class="invalid-feedback">Please fill out this field</div>
+  </div><br>
 
-      </form>
 
-    </body>
-  </html>
+    <button type="submit">Register</button>
+  </div>
+ <div>
+    <p>Already have an account? <a href="file:///C:/Users/student/Desktop/day-6/login.html">Log in</a>.</p>
+  </div>
+</form>
+    </font>
+</body>
+</html>
