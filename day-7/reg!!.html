@@ -1,0 +1,75 @@
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+      <h1>Register</h1>
+</head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="https://www.w3schools.com/bootstrap/bootstrap_navbar.asp">WebSiteName</a>
+        </div><ul class="nav navbar-nav">
+          <li class="active"><a href="https://www.google.com/">Home</a></li>
+          <li><a href="https://silveroakuni.ac.in/#">Page 1</a></li>
+          <li><a href="https://www.google.com/maps">Page 2</a></li>
+          <li><a href="https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en">Page 3</a></li>
+        </ul>
+      </div>
+    </nav>
+    <font size="3">
+  <form class="was-validated">
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
+      <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+      <path d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"/>
+    </svg>
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter username" name="username" id="username" required>
+    <div class="valid-feedback">Valid</div>
+    <div class="invalid-feedback">Please fill out this field</div>
+  </div><br>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mailbox" viewBox="0 0 16 16">
+    <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
+    <path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
+  </svg>
+    <label for="email"><b>Email</b></label>
+    <input type="text"placeholder="Enter Email"name="email"id="email"required>
+    <div class="valid-feedback">Valid</div>
+    <div class="invalid-feedback">Please fill out this field</div>
+  </div><br>
+
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+    <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+    <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+  </svg>
+    <label for="pwd"><b>Password</b></label>
+    <input type="password"placeholder="Enter Password"name="pwd"id="pwd"required/><div class="valid-feedback">Valid</div>
+    <div class="invalid-feedback">Please fill out this field</div>
+  </div><br>
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+    <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+  </svg>
+    <label for="pwd-repeat"><b>Repeat Password</b></label>
+    <input type="password"placeholder="Repeat Password"name="pwd-repeat"id="pwd-repeat"required/><div class="valid-feedback">Valid</div>
+    <div class="invalid-feedback">Please fill out this field</div>
+  </div><br>
+
+
+    <button type="submit">Register</button>
+  </div>
+ <div>
+    <p>Already have an account? <a href="file:///C:/Users/student/Desktop/day-6/login.html">Log in</a>.</p>
+  </div>
+</form>
+    </font>
+</body>
+</html>
