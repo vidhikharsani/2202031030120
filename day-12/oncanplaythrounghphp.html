@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<p><b>_oncanplaythrough_</p></b>
+
+<video controls oncanplaythrough="myFunction()">
+  <source src="https://player.vimeo.com/external/384761655.sd.mp4?s=383ab4dbc773cd0d5ece3af208d8f963368f67e4&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Can play through without stopping.";
+}
+</script>
+
+</body> 
+</html>
