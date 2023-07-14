@@ -1,0 +1,178 @@
+<!DOCTYPE html>    
+<html>    
+<head>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>  
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<style>    
+* {    
+  box-sizing: border-box;    
+}    
+    
+input[type=text], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+input[type=email], select, textarea {    
+  width: 100%;    
+  padding: 12px;    
+  border: 1px solid rgb(70, 68, 68);    
+  border-radius: 4px;    
+  resize: vertical;    
+}    
+    
+label {    
+  padding: 12px 12px 12px 0;    
+  display: inline-block;    
+}    
+    
+input[type=submit] {    
+  background-color: rgb(37, 116, 161);    
+  color: white;    
+  padding: 12px 20px;    
+  border: none;    
+  border-radius: 4px;    
+  cursor: pointer;    
+  float: right;    
+}    
+    
+input[type=submit]:hover {    
+  background-color: #45a049;    
+}    
+    
+.container {    
+  border-radius: 5px;    
+  background-color: #f2f2f2;    
+  padding: 20px;    
+}    
+    
+.col-25 {    
+  float: left;    
+  width: 25%;    
+  margin-top: 6px;    
+}    
+    
+.col-75 {    
+  float: left;    
+  width: 75%;    
+  margin-top: 6px;    
+}    
+    
+ 
+.row:after {    
+  content: "";    
+  display: table;    
+  clear: both;    
+} 
+/* component */
+
+.star-rating {
+  
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
+
+.star-rating input {
+  display:none;
+}
+
+.star-rating label {
+  color:lightblue;
+  cursor:pointer;
+}
+
+.star-rating :checked ~ label {
+  color:#f90;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color:#fc0;
+}
+
+/* explanation */
+
+
+   
+    
+
+</style>    
+</head>    
+<body style="background-color:powderblue;">    
+<center><h2> CUSTOMER FEED BACK FORM</h2> </center>   
+
+<div class="container">    
+  <form>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="fname">Customer Name</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="lname">Customer id</label>    
+      </div>    
+      <div class="col-75">    
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+      </div>    
+    </div>    
+    <div class="row">    
+        <div class="col-25">    
+          <label for="email">Mail Id</label>    
+        </div>    
+        <div class="col-75">    
+          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+        </div>    
+      </div>    
+    <div class="row">    
+        
+         
+    </div>    
+    <div class="row">    
+      <div class="col-25">    
+        <label for="feed_back">Feed Back</label>    
+      </div>    
+      <div class="col-75">    
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+      </div>
+      <h>Rating</h>
+      <div class="star-rating">
+        <input type="radio" id="5-stars" name="rating" value="5" />
+        <label for="5-stars" class="star">&#9733;</label>
+        <input type="radio" id="4-stars" name="rating" value="4" />
+        <label for="4-stars" class="star">&#9733;</label>
+        <input type="radio" id="3-stars" name="rating" value="3" />
+        <label for="3-stars" class="star">&#9733;</label>
+        <input type="radio" id="2-stars" name="rating" value="2" />
+        <label for="2-stars" class="star">&#9733;</label>
+        <input type="radio" id="1-star" name="rating" value="1" />
+        <label for="1-star" class="star">&#9733;</label>
+      </div>
+      
+         
+    </div>    
+    <div class="row">    
+      <input type="submit" value="Submit">    
+      <script>
+        $(document).ready(function(){
+          $("form").submit(function(){
+            alert("Submitted");
+          });
+        });
+        </script>
+    </div>    
+  </form>    
+</div>    
+    
+</body>    
+</html> 
